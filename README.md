@@ -22,8 +22,8 @@ source("Data.sim.func.R")
 ```
 
 
-# Set the true value of parameters
-r=0 //Users may use any nonnegative r values. 
+# Set the true value of parameters.
+r=0 //Users can use any nonnegative r values. 
 beta=as.vector(-1)
 gamma=as.vector(-1)
 theta=1
@@ -32,13 +32,13 @@ n=300
 # Generate subject level covariates. Users can change the distribution of covariates.
 Z=runif(n,-1,1)
 
-# Generate numbers of observations within each subjects
+# Generate numbers of observations within each subjects.
 mi=rep(0,n) 
 for(i in 1:n){
   mi[i]=rtpois(1,exp(1.7),a=1,b=8)
 }
 
-# Generate cluster effect
+# Generate cluster effect.
 b=rnorm(n,0,1)
 C=list()
 length(C)=n
@@ -46,7 +46,7 @@ for(i in 1:n){
   C[[i]]=rep(0,mi[i])
 }
 
-# Generate within-subject level covariates
+# Generate within-subject level covariates.
 X=list()
 length(X)=n
 for (i in 1:n) {
@@ -54,7 +54,7 @@ for (i in 1:n) {
 }
 Z=as.matrix(Z)
 
-# Generate Gauss-Hermite Quadrature rule
+# Generate Gauss-Hermite Quadrature rule. 
 myrules=hermite.h.quadrature.rules(30,normalized=FALSE)
 myrules=as.matrix(myrules[[30]])
 
