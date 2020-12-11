@@ -9,7 +9,7 @@ install.packages("MMGOR_1.0.tar.gz")
 ```
 
 ## Example
-There is an example to show how to use this package. First, use following command to simulate data. Data simulating has several dependencies [**gaussquad**](https://cran.r-project.org/web/packages/gaussquad/index.html)
+There is an example to show how to use this package. First, use following command to simulate data. Data simulating has several dependencies [**gaussquad**](https://cran.r-project.org/web/packages/gaussquad/index.html), [**numDeriv**](https://cran.r-project.org/web/packages/numDeriv/index.html), [**extraDistr**](https://cran.r-project.org/web/packages/extraDistr/index.html), [**fda**](https://cran.r-project.org/web/packages/fda/index.html), [**splines2**](https://cran.r-project.org/web/packages/splines2/index.html) and [**nleqslv**](https://cran.r-project.org/web/packages/nleqslv/index.html).
 ```
 # Load package
 library(MMGOR)
