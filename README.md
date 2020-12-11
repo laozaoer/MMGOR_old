@@ -1,5 +1,5 @@
 ## MMGOR
-Minorize-Maximize Algorithm for the Generalized Odds Ratio Model for Clustered Current Status Data
+A novel minorize-maximize algorithm for the generalized odds ratio Model for clustered current status data
 
 ## Installation
 
