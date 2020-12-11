@@ -1,3 +1,14 @@
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
 ## MMGOR
 A novel minorize-maximize algorithm for the generalized odds ratio Model for clustered current status data
 
@@ -13,7 +24,7 @@ install.packages("MMGOR_1.0.tar.gz")
 # Load package
 library(MMGOR)
 
-#Import required packages and functions
+#Import required packages and functions for generating data
 source("Data.sim.func.R")
 ```
 ### Simulate data with $r=0$, $\theta=1$, $\beta=-1$, $\gamma=-1$, $n=300$  and estimate the parameters.
