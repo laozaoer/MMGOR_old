@@ -1,14 +1,4 @@
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-      processEscapes: true
-    }
-  });
-</script>
-
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-
+<img src="http://chart.googleapis.com/chart?cht=tx&chl= \theta" style="border:none;">
 ## MMGOR
 A novel minorize-maximize algorithm for the generalized odds ratio Model for clustered current status data
 
