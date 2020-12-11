@@ -21,7 +21,6 @@ library(MMGOR)
 
 #### Simulate data:
 ```
-library(MMGOR)
 set.seed(718)
 H=function(t) log(1+t)+t^(3/2) 
 data=data_for_est(r=0,beta=c(-1),gamma=c(-1),theta=1,n=300,H=H,knotsnum=2,order=2,quadnum=30)
