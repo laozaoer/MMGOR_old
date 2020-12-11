@@ -23,7 +23,7 @@ source("Data.sim.func.R")
 
 
 # Set the true value of parameters
-r=0 
+r=0 //Users may use any nonnegative r values. 
 beta=as.vector(-1)
 gamma=as.vector(-1)
 theta=1
@@ -58,7 +58,8 @@ Z=as.matrix(Z)
 myrules=hermite.h.quadrature.rules(30,normalized=FALSE)
 myrules=as.matrix(myrules[[30]])
 
-# Generate the censoring indicators and the spline function values. Users can use their own H function.
+# Generate the censoring indicators and the spline function values. 
+# Users can use their own H function by changing the specific H function in the file *Data.sim.func.R*.
 data=data_for_est(r,beta,gamma,theta,X,Z,n,mi,knotsnum=2,order=2,H)
 ```
 
