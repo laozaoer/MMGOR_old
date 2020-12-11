@@ -21,7 +21,7 @@ library(MMGOR)
 
 #### Simulate data:
 ```
-set.seed(1234)
+set.seed(1)
 H=function(t) log(1+t)+t^(3/2) 
 data=data_for_est(r=0,beta=c(-1),gamma=c(-1),theta=1,n=300,H=H)
 ```
@@ -39,7 +39,7 @@ The output includes the parameters estimates and the corresponding standard erro
 
 #### Simulate data:
 ```
-set.seed(1234)
+set.seed(1)
 H=function(t) log(1+t)+t^(3/2) 
 data=data_for_est(r=1,beta=c(-1),gamma=c(-1),theta=1,n=300,H=H)
 ```
