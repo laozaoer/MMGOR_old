@@ -1,4 +1,4 @@
-# MMGOR: a novel Minorize-Maximize Algorithm for the Generalized Odds Rate Model for Clustered Current Status Data
+# MMGOR: A Novel Minorize-Maximize Algorithm for the Generalized Odds Rate Model for Clustered Current Status Data
 
 
 ## Overview
