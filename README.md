@@ -24,18 +24,19 @@ beta=as.vector(-1)
 gamma=as.vector(-1)
 theta=1
 n=300
+# generating subject level covariates
 Z=runif(n,-1,1)
-mi=rep(0,n)
-b=rnorm(n,0,1)
+mi=rep(0,n)// numbers of observations within each subjects
 for(i in 1:n){
   mi[i]=rtpois(1,exp(1.7),a=1,b=8)
 }
+b=rnorm(n,0,1)// simulated clustered effect
 C=list()
 length(C)=n
 for(i in 1:n){
-  C[[i]]=runif(mi[i],0,1)
+  C[[i]]=rep(0,mi[i])
 }
-X=list()
+X=list()// within-subject level covariates
 length(X)=n
 for (i in 1:n) {
   X[[i]]=as.matrix(runif(mi[i],-1,1))
