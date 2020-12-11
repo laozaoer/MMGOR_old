@@ -18,7 +18,8 @@ source("Data.sim.func.R")
 ```
 ### Scenario 1: <img src="http://chart.googleapis.com/chart?cht=tx&chl= r=0" style="border:none;">, <img src="http://chart.googleapis.com/chart?cht=tx&chl= \theta=1" style="border:none;">, <img src="http://chart.googleapis.com/chart?cht=tx&chl= \beta=-1" style="border:none;">, <img src="http://chart.googleapis.com/chart?cht=tx&chl= \gamma=-1" style="border:none;">, <img src="http://chart.googleapis.com/chart?cht=tx&chl= n=300" style="border:none;">
 ```
-r=0
+# Simulate data 
+r=0 
 beta=as.vector(-1)
 gamma=as.vector(-1)
 theta=1
