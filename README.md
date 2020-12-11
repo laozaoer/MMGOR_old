@@ -13,9 +13,6 @@ There is an example to show how to use this package. First, use following comman
 ```
 # Load package
 library(MMGOR)
-
-#Import required packages and functions for generating data
-source("Data.sim.func.R")
 ```
 ### Scenario 1: <img src="http://chart.googleapis.com/chart?cht=tx&chl= r=0" style="border:none;">, <img src="http://chart.googleapis.com/chart?cht=tx&chl= \theta=1" style="border:none;">, <img src="http://chart.googleapis.com/chart?cht=tx&chl= \beta=-1" style="border:none;">, <img src="http://chart.googleapis.com/chart?cht=tx&chl= \gamma=-1" style="border:none;">, <img src="http://chart.googleapis.com/chart?cht=tx&chl= n=300" style="border:none;">
 
