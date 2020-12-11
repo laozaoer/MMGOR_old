@@ -30,4 +30,4 @@ Regression parameters can be estimated using the command
 ```
 result=MM_est(rep(0,8),data$GHrules,data$Delta,data$X,data$Z,data$n,data$ni,data$r,data$spline_value,data$betadim,data$gammadim)
 ```
-
+The result includes parameters estimates and corresponding variance estimates.
