@@ -33,9 +33,7 @@ Regression parameters can be estimated using the command
 result=MM_est(data$Delta,data$X,data$Z,data$n,data$ni,r=data$r,data$C,betadim=dim(data$X[[1]])[2],gammadim=dim(data$Z)[2])
 ```
 The output includes the parameters estimates and the corresponding standard errors.
-```
 
-```
 
 
 ### Scenario 2 (proportional odds model): <img src="http://chart.googleapis.com/chart?cht=tx&chl= r=1" style="border:none;">, <img src="http://chart.googleapis.com/chart?cht=tx&chl= \theta=1" style="border:none;">, <img src="http://chart.googleapis.com/chart?cht=tx&chl= \beta=-1" style="border:none;">, <img src="http://chart.googleapis.com/chart?cht=tx&chl= \gamma=-1" style="border:none;">, <img src="http://chart.googleapis.com/chart?cht=tx&chl= n=300" style="border:none;">
