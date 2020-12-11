@@ -18,7 +18,7 @@ source("Data.sim.func.R")
 ```
 ### Scenario 1: <img src="http://chart.googleapis.com/chart?cht=tx&chl= r=0" style="border:none;">, <img src="http://chart.googleapis.com/chart?cht=tx&chl= \theta=1" style="border:none;">, <img src="http://chart.googleapis.com/chart?cht=tx&chl= \beta=-1" style="border:none;">, <img src="http://chart.googleapis.com/chart?cht=tx&chl= \gamma=-1" style="border:none;">, <img src="http://chart.googleapis.com/chart?cht=tx&chl= n=300" style="border:none;">
 
-#### Simulate data
+#### Simulate data:
 ```
 
 
@@ -60,16 +60,19 @@ myrules=as.matrix(myrules[[30]])
 
 # Generate the censoring indicators and the spline function values. Users can use their own H function.
 data=data_for_est(r,beta,gamma,theta,X,Z,n,mi,knotsnum=2,order=2,H)
+```
 
-# Use the proposed MM algorithm to obtain the estimates.
-
+#### Estimate the parameters
+```
 result=MM_est(rep(0,8),myrules,data[[1]],X,Z,n,mi,r,data[[2]],1,1)
 
 ```
 
 ### Scenario 2: <img src="http://chart.googleapis.com/chart?cht=tx&chl= r=2" style="border:none;">, <img src="http://chart.googleapis.com/chart?cht=tx&chl= \theta=1" style="border:none;">, <img src="http://chart.googleapis.com/chart?cht=tx&chl= \beta=-1" style="border:none;">, <img src="http://chart.googleapis.com/chart?cht=tx&chl= \gamma=-1" style="border:none;">, <img src="http://chart.googleapis.com/chart?cht=tx&chl= n=300" style="border:none;">
+
+#### Simulate data:
 ```
-# Simulate data 
+
 
 # Set the true value of parameters
 r=2
@@ -78,7 +81,7 @@ gamma=as.vector(-1)
 theta=1
 n=300
 
-# Generate subject level covariates
+# Generate subject level covariates. Users can change the distribution of covariates.
 Z=runif(n,-1,1)
 
 # Generate numbers of observations within each subjects
@@ -107,12 +110,12 @@ Z=as.matrix(Z)
 myrules=hermite.h.quadrature.rules(30,normalized=FALSE)
 myrules=as.matrix(myrules[[30]])
 
-# Generate the censoring indicators and the spline function values. Users can use different H function.
+# Generate the censoring indicators and the spline function values. Users can use their own H function.
 data=data_for_est(r,beta,gamma,theta,X,Z,n,mi,knotsnum=2,order=2,H)
+```
 
-# Use the proposed MM algorithm to obtain the estimates.
-
+#### Estimate the parameters
+```
 result=MM_est(rep(0,8),myrules,data[[1]],X,Z,n,mi,r,data[[2]],1,1)
 
 ```
-
