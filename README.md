@@ -63,3 +63,7 @@ myrules=as.matrix(myrules[[30]])
 data=data_for_est(r,beta,gamma,theta,X,Z,n,mi,knotsnum=2,order=2,H)
 ```
 
+#### Estimate parameters:
+```
+result=MM_est(rep(0,8),myrules,data[[1]],X,Z,n,mi,r,data[[2]],1,1)
+```
