@@ -26,4 +26,5 @@ set.seed(718)
 H=function(t) log(1+t)+t^(3/2) // Users can use their own H function.
 data=data_for_est(r=0,beta=c(1),gamma=c(1),theta=1,n=300,H=H,knotsnum=2,order=2,quadnum=30)
 ```
+This function generates 300 subjects, where each subject has up to 8 observations. 
 
