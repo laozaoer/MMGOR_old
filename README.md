@@ -27,7 +27,7 @@ gamma=as.vector(-1)
 theta=1
 n=300
 
-# Generate subject level covariates
+# Generate subject level covariates. Users can change the distribution of covariates.
 Z=runif(n,-1,1)
 
 # Generate numbers of observations within each subjects
@@ -56,7 +56,7 @@ Z=as.matrix(Z)
 myrules=hermite.h.quadrature.rules(30,normalized=FALSE)
 myrules=as.matrix(myrules[[30]])
 
-# Generate the censoring indicators and the spline function values. Users can use different H function.
+# Generate the censoring indicators and the spline function values. Users can use their own H function.
 data=data_for_est(r,beta,gamma,theta,X,Z,n,mi,knotsnum=2,order=2,H)
 
 # Use the proposed MM algorithm to obtain the estimates.
