@@ -1,5 +1,7 @@
 ## MMGOR
-This package use a novel minorize-maximize algorithm to estimate parameters of generalized odds rate model with clustered current status data.
+This package use a novel minorize-maximize algorithm to estimate parameters of generalized odds rate model with clustered current status data. 
+
+The program returns the regression parameters estimates and corresponding variance estimates.
 
 ## Installation
 
@@ -30,4 +32,3 @@ Regression parameters can be estimated using the command
 ```
 result=MM_est(rep(0,8),data$GHrules,data$Delta,data$X,data$Z,data$n,data$ni,data$r,data$spline_value,data$betadim,data$gammadim)
 ```
-The result includes parameters estimates and corresponding variance estimates.
