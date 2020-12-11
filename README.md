@@ -3,7 +3,7 @@ This package use a novel minorize-maximize algorithm to estimate parameters of g
 
 ## Installation
 
-Downlowd the compressed file *MMGOR_1.0.tar.gz* to the working directory and then install it.
+Downlowd the compressed file *MMGOR_1.0.tar.gz* to the working directory and  use following command to install it
 ```
 install.packages("MMGOR_1.0.tar.gz")
 ```
