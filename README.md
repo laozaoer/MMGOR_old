@@ -3,12 +3,13 @@ A novel minorize-maximize algorithm for the generalized odds ratio Model for clu
 
 ## Installation
 
-To use the proposed MM algorithm, users should first downlowd the compressed file *MMGOR_1.0.tar.gz* and install it.
+Downlowd the compressed file *MMGOR_1.0.tar.gz* to the working directory and then install it.
 ```
 install.packages("MMGOR_1.0.tar.gz")
 ```
 
-## Examples
+## Example
+There is an example to show how to use this package. First, use following command to simulate data. Data simulating has several dependencies [**gaussquad**]https://cran.r-project.org/web/packages/gaussquad/index.html
 ```
 # Load package
 library(MMGOR)
