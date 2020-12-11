@@ -1,5 +1,5 @@
 ## MMGOR
-A novel minorize-maximize algorithm for the generalized odds ratio Model for clustered current status data
+This package use a novel minorize-maximize algorithm to estimate parameters of generalized odds rate model with clustered current status data.
 
 ## Installation
 
