@@ -30,7 +30,7 @@ This function generates a cohort with 300 subjects, where each subject has up to
 #### Estimate parameters:
 Regression parameters can be estimated using the command
 ```
-result=MM_est(data$Delta,data$X,data$Z,data$n,data$ni,r=data$r,data$C,betadim=dim(data$X[[1]])[2],gammadim=dim(data$Z)[2])
+result=MM_est(data$Delta,data$X,data$Z,data$n,data$ni,r=data$r,data$C,betadim=dim(data$X[[1]])[2],gammadim=dim(data$Z)[2],knotsnum = 2,order=2)
 ```
 The output includes the parameters estimates and the corresponding standard errors.
 
@@ -49,6 +49,6 @@ This function generates a cohort with 300 subjects, where each subject has up to
 #### Estimate parameters:
 Regression parameters can be estimated using the command
 ```
-result=MM_est(data$Delta,data$X,data$Z,data$n,data$ni,r=data$r,data$C,betadim=dim(data$X[[1]])[2],gammadim=dim(data$Z)[2])
+result=MM_est(data$Delta,data$X,data$Z,data$n,data$ni,r=data$r,data$C,betadim=dim(data$X[[1]])[2],gammadim=dim(data$Z)[2],knotsnum = 2,order=2)
 ```
 The output includes the parameters estimates and the corresponding standard errors.
