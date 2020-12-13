@@ -2,7 +2,7 @@
 
 
 ## Overview
-The **MMGOR** package implements a novel minorize-maximize algorithm to estimate parameters of generalized odds rate (GOR) model with clustered current status data. **MMGOR** allows any nonnegative r values of GOR model, which covers a wide range of commonly used survival models. The package takes advantage of C++ computational efficiency to reduce computation time.
+The **MMGOR** package implements a novel minorize-maximize algorithm to estimate parameters of generalized odds rate (GOR) model with clustered current status data. **MMGOR** allows any nonnegative r values of GOR model, which covers a wide range of commonly used survival models. The package takes advantage of C++ computational efficiency to reduce the computation time.
 
 ## Installation
 
